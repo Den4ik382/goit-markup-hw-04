@@ -126,9 +126,10 @@ h6 {
   display: inline-block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.studio::after {
+.studio-text :first-child::after {
   position: absolute;
   left: 0;
+  width: 100%;
   content: "";
   bottom: -1px;
   display: block;
@@ -280,10 +281,7 @@ h6 {
   justify-content: center;
   gap: 24px;
 }
-.icon-item:hover {
-  background-color: #404bbf;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .team-item {
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
@@ -336,20 +334,25 @@ h6 {
 .icon-item {
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
 }
-.fill-icon {
+.team-icons:hover,
+.team-icons:active {
+  background-color: #404bbf;
+}
+.team-icons-svg {
   fill: #f4f4fd;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .portfolio {
@@ -483,7 +486,35 @@ h6 {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-.foot .icon-item:hover {
+.team-icons-foot:hover {
   background-color: #31d0aa;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foot-div-social {
+}
+.foot-social-text {
+}
+.icon-list-foot {
+  display: flex;
+
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-item-foot {
+  width: 40px;
+  height: 40px;
+  gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-icons-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.team-icons-foot-svg {
 }
