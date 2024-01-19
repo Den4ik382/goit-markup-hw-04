@@ -97,10 +97,6 @@ h6 {
 .header-link-nav:hover,
 .header-link-addres:hover {
   color: var(--OCEAN, #404bbf);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -115,8 +111,7 @@ h6 {
 }
 
 .header-link-nav {
-  position: relative;
-  color: #404bbf;
+  color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -126,7 +121,11 @@ h6 {
   display: inline-block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.studio-text :first-child::after {
+.studio-link {
+  position: relative;
+  color: #404bbf;
+}
+.studio-link::after {
   position: absolute;
   left: 0;
   width: 100%;
@@ -193,6 +192,7 @@ h6 {
 .hero-btn {
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
+  color: var(--WHITE, #fff);
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -311,10 +311,9 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-block {
-  display: flex;
-  width: 232px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -417,8 +416,6 @@ h6 {
   letter-spacing: 0.02em;
 }
 .portfolio-item:hover {
-  border: 1px solid var(--CLOUD, #f4f4fd);
-  background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
